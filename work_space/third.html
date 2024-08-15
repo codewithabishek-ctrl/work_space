@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #about {
+            color: #faf8fe; /* Bright red color */
+            font-size: 1.2em; /* Adjust this value as needed */
+            font-weight: bold; /* Make the text bold */
+        }
+    </style>
+    <script>
+        function showAboutPage() {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'block';
+        }
+
+        function showHomePage() {
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('home').style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="College Logo">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#" onclick="showHomePage()">Home</a></li>
+                <li><a href="#" onclick="showAboutPage()">About Us</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Campus Life</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="cta">
+            <a href="#" class="btn">Apply Now</a>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Shaping Futures, Inspiring Leaders</h1>
+                <p>Your journey towards excellence begins here. Join HORIZON community of driven individuals and world-class educators.</p>
+                <a href="#" class="btn-hero">Discover More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" style="display: none;">
+        <h1>About Our College</h1>
+        <p>Horizon GBS (Gautam Buddha School) is a well-regarded educational institution in Nepal. Originally established as New Horizon English Boarding School in 2046 BS, it has since evolved into a prominent academic hub known for its strong infrastructure, experienced faculty, and notable achievements, including top positions in SLC (School Leaving Certificate) exams.
+
+            The college offers a range of programs, including +2 (intermediate level) courses under the NEB, as well as Bachelor's and Master's degrees affiliated with Tribhuvan University and Pokhara University. Horizon GBS is located in Tilottama, Rupandehi, and has expanded its academic offerings over the years to meet the growing demands of students.
+            
+            The school is recognized for its commitment to quality education and has played a significant role in shaping the future of its students​ (Admission Nepal)​ (Nepali Search Engine).</p>
+    </section>
+</body>
+</html>
